@@ -1,5 +1,5 @@
 {
-  "name": "tauri-app",
+  "name": "on-my-tool",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,9 +11,12 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@umijs/plugin-antd": "^0.15.0",
+    "antd": "^4.20.6",
+    "croner": "^4.3.11",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
+    "tslib": "^2.4.0",
     "typescript": "^4.4.2",
     "umi": "^3.5.24",
     "web-vitals": "^2.1.0"

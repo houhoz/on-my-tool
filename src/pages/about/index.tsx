@@ -4,6 +4,7 @@ export default function IndexPage() {
     <div>
       <h1>about index</h1>
       <Link to="/">index</Link>
+      <div>111</div>
     </div>
   );
 }
