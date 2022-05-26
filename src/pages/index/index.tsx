@@ -11,6 +11,10 @@ import styles from './index.less';
 
 export default function IndexPage() {
   const [list, setList] = useState<string[]>([]);
+  useEffect(() => {
+    const clipboardJson = localStorage.getItem('clipboard') || '';
+    setList(JSON.parse(clipboardJson));
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -18,6 +22,8 @@ export default function IndexPage() {
         const firstText = list[0];
         if (isDiffText(firstText, text)) {
           setList([text, ...list]);
+          const clipboard = JSON.stringify([text, ...list]);
+          localStorage.setItem('clipboard', clipboard);
         }
       });
     }, 1000);

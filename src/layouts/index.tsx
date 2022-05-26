@@ -25,7 +25,7 @@ export default withRouter((props: any) => {
           ]}
         />
       </Header>
-      <Content style={{ padding: '0 50px' }}>{props.children}</Content>
+      <Content style={{ padding: 25 }}>{props.children}</Content>
       <Footer style={{ textAlign: 'center' }}>
         onMyTool ©2022 Created by 候亚照
       </Footer>
